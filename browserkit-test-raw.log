@@ -1,0 +1,846 @@
+Updating https://github.com/nbhasin2/Fuzi.git
+Updated https://github.com/nbhasin2/Fuzi.git (0.46s)
+Updating https://github.com/nbhasin2/GCDWebServer.git
+Updated https://github.com/nbhasin2/GCDWebServer.git (0.43s)
+Updating https://github.com/onevcat/Kingfisher.git
+Updating https://github.com/SwiftyBeaver/SwiftyBeaver.git
+Updating https://github.com/AliSoftware/Dip.git
+Updating https://github.com/swhitty/SwiftDraw
+Updating https://github.com/getsentry/sentry-cocoa.git
+Updating https://github.com/johnxnguyen/Down.git
+Updated https://github.com/SwiftyBeaver/SwiftyBeaver.git (0.58s)
+Updated https://github.com/onevcat/Kingfisher.git (0.58s)
+Updated https://github.com/AliSoftware/Dip.git (0.63s)
+Updated https://github.com/swhitty/SwiftDraw (0.80s)
+Updated https://github.com/getsentry/sentry-cocoa.git (0.80s)
+Updated https://github.com/johnxnguyen/Down.git (0.80s)
+Computing version for https://github.com/johnxnguyen/Down.git
+Computed https://github.com/johnxnguyen/Down.git at 0.11.0 (1.37s)
+Computing version for https://github.com/swhitty/SwiftDraw
+Computed https://github.com/swhitty/SwiftDraw at 0.18.3 (0.50s)
+Computing version for https://github.com/getsentry/sentry-cocoa.git
+Computed https://github.com/getsentry/sentry-cocoa.git at 8.36.0 (0.52s)
+Computing version for https://github.com/SwiftyBeaver/SwiftyBeaver.git
+Computed https://github.com/SwiftyBeaver/SwiftyBeaver.git at 2.0.0 (0.57s)
+Computing version for https://github.com/AliSoftware/Dip.git
+Computed https://github.com/AliSoftware/Dip.git at 7.1.1 (0.64s)
+Computing version for https://github.com/onevcat/Kingfisher.git
+Computed https://github.com/onevcat/Kingfisher.git at 8.2.0 (0.47s)
+Creating working copy for https://github.com/nbhasin2/GCDWebServer.git
+Working copy of https://github.com/nbhasin2/GCDWebServer.git resolved at master (7674c93)
+Creating working copy for https://github.com/johnxnguyen/Down.git
+Working copy of https://github.com/johnxnguyen/Down.git resolved at 0.11.0
+Creating working copy for https://github.com/onevcat/Kingfisher.git
+Working copy of https://github.com/onevcat/Kingfisher.git resolved at 8.2.0
+Creating working copy for https://github.com/AliSoftware/Dip.git
+Working copy of https://github.com/AliSoftware/Dip.git resolved at 7.1.1
+Creating working copy for https://github.com/getsentry/sentry-cocoa.git
+Working copy of https://github.com/getsentry/sentry-cocoa.git resolved at 8.36.0
+Creating working copy for https://github.com/nbhasin2/Fuzi.git
+Working copy of https://github.com/nbhasin2/Fuzi.git resolved at master (0417068)
+Creating working copy for https://github.com/SwiftyBeaver/SwiftyBeaver.git
+Working copy of https://github.com/SwiftyBeaver/SwiftyBeaver.git resolved at 2.0.0
+Creating working copy for https://github.com/swhitty/SwiftDraw
+Working copy of https://github.com/swhitty/SwiftDraw resolved at 0.18.3
+Downloading binary artifact https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry.xcframework.zip
+Downloading binary artifact https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry-Dynamic.xcframework.zip
+[1369/52640054] Downloading https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry-Dynamic.xcframework.zip
+[65536/77831051] Downloading https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry-Dynamic.xcframework.zip, https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry.xcframework.zip
+Downloaded https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry.xcframework.zip (10.70s)
+Downloaded https://github.com/getsentry/sentry-cocoa/releases/download/8.36.0/Sentry-Dynamic.xcframework.zip (14.14s)
+warning: 'browserkit': found 2 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Logger/README.md
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/README.md
+warning: 'browserkit': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/TabDataStore/README.md
+warning: 'browserkit': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/WebEngine/README.md
+warning: 'browserkit': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/ContentBlockingGenerator/README.md
+warning: 'browserkit': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/OnboardingKit/Media.xcassets
+warning: 'kingfisher': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+    /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/.build/checkouts/Kingfisher/Sources/Info.plist
+Building for debugging...
+[0/91] /Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/.build/arm64-apple-macosx/debug/BrowserKitPackageTests.derived/runner.swift
+[0/91] Write sources
+[8/91] Write swift-version--58304C5D6DBC2206.txt
+[9/91] Compiling libcmark render.c
+[9/91] Compiling libcmark man.c
+[10/91] Compiling libcmark latex.c
+[12/91] Compiling libcmark iterator.c
+[13/91] Compiling libcmark scanners.c
+[14/91] Compiling libcmark utf8.c
+[15/91] Compiling libcmark xml.c
+[16/91] Compiling libcmark houdini_html_e.c
+[17/91] Compiling libcmark references.c
+[18/91] Compiling libcmark inlines.c
+[19/91] Write sources
+[21/91] Compiling libcmark html.c
+[23/91] Write sources
+[26/91] Compiling libcmark houdini_html_u.c
+[27/91] Write sources
+[30/91] Compiling libcmark houdini_href_e.c
+[30/91] Write sources
+[38/91] Copying PrivacyInfo.xcprivacy
+[39/91] Write sources
+[41/91] Compiling libcmark cmark_ctype.c
+[42/91] Write sources
+[43/91] Compiling libcmark cmark.c
+[44/91] Write sources
+[45/91] Compiling libcmark commonmark.c
+[47/91] Write ExecutableContentBlockingGenerator-entitlement.plist
+[48/91] Compiling libcmark buffer.c
+[49/91] Copying GCDWebUploader.bundle
+[50/91] Copying DownView.bundle
+[51/91] Write sources
+[56/91] Copying DownView (macOS).bundle
+[58/91] Write sources
+[59/91] Compiling libcmark blocks.c
+[60/91] Copying Sentry.framework
+[61/91] Compiling libcmark node.c
+[62/265] Compiling GCDWebServers resource_bundle_accessor.m
+[63/265] Compiling GCDWebServerStreamedResponse.m
+[64/265] Compiling GCDWebServerFileResponse.m
+[65/265] Compiling GCDWebUploader.m
+[66/265] Compiling GCDWebServerDataResponse.m
+[67/265] Compiling GCDWebServerErrorResponse.m
+[68/326] Compiling GCDWebServerURLEncodedFormRequest.m
+[69/326] Compiling GCDWebServerFileRequest.m
+[70/326] Compiling GCDWebServerMultiPartFormRequest.m
+[71/326] Compiling GCDWebServerDataRequest.m
+[72/326] Compiling GCDWebServerResponse.m
+[74/326] Compiling ContentBlockingGenerator JsonHelper.swift
+[75/326] Compiling ContentBlockingGenerator ContentBlockerFileManager.swift
+[76/326] Compiling ContentBlockingGenerator FileCategory.swift
+[76/326] Compiling GCDWebServerRequest.m
+[78/326] Compiling ContentBlockingGenerator ContentBlockerGenerator.swift
+[79/326] Compiling ContentBlockingGenerator ContentBlockerParser.swift
+[80/326] Compiling ContentBlockingGenerator ActionType.swift
+[81/326] Emitting module ContentBlockingGenerator
+[82/326] Compiling ContentBlockingGenerator Entity.swift
+[83/326] Compiling SwiftyBeaver GoogleCloudDestination.swift
+[84/326] Compiling SwiftyBeaver SwiftyBeaver.swift
+[85/326] Compiling SwiftyBeaver Filter.swift
+[86/326] Compiling SwiftyBeaver FilterValidator.swift
+[87/326] Compiling SwiftyBeaver Extensions.swift
+[88/326] Compiling SwiftyBeaver BaseDestination.swift
+[89/326] Compiling SwiftyBeaver Base64.swift
+[90/326] Emitting module SwiftyBeaver
+[91/326] Compiling SwiftyBeaver ConsoleDestination.swift
+[92/326] Compiling SwiftyBeaver FileDestination.swift
+[93/326] Compiling Fuzi Document.swift
+[94/326] Compiling Fuzi Helpers.swift
+[95/326] Compiling Fuzi Node.swift
+[96/326] Compiling Fuzi Error.swift
+[97/326] Compiling Fuzi Element.swift
+[98/326] Emitting module Fuzi
+[99/326] Compiling Fuzi NodeSet.swift
+[100/326] Compiling Fuzi Queryable.swift
+[100/326] Compiling GCDWebServerConnection.m
+[101/326] Write sources
+[102/326] Copying mozilla.ico
+[103/326] Copying inf-nan.svg
+[103/326] Copying hackernews.svg
+[105/328] Compiling GCDWebServerFunctions.m
+[105/328] Write sources
+[109/328] Copying BundledTopSitesFavicons.xcassets
+[110/335] Compiling GCDWebDAVServer.m
+[111/335] Compiling GCDWebServer.m
+[113/335] Compiling ExecutableContentBlockingGenerator MainContentBlockerGenerator.swift
+[114/335] Emitting module ExecutableContentBlockingGenerator
+[114/335] Write Objects.LinkFileList
+[116/335] Emitting module ActionExtensionKit
+[117/335] Compiling ActionExtensionKit ActionShareItem.swift
+[118/335] Compiling ActionExtensionKit FirefoxURLBuilding.swift
+[118/337] Linking ExecutableContentBlockingGenerator
+[119/337] Applying ExecutableContentBlockingGenerator
+[121/337] Compiling Down String+ToHTML.swift
+[122/337] Compiling Down DownASTRenderable.swift
+[123/337] Compiling Down DownAttributedStringRenderable.swift
+[124/337] Compiling Down DownCommonMarkRenderable.swift
+[125/337] Compiling Down DownGroffRenderable.swift
+[126/337] Compiling Down DownHTMLRenderable.swift
+[127/343] Compiling Down NSMutableAttributedString+Attributes.swift
+[128/343] Compiling Down UIFont+Traits.swift
+[129/343] Compiling Down ListItemParagraphStyler.swift
+[130/343] Compiling Down DownDebugLayoutManager.swift
+[131/343] Compiling Down DownLayoutManager.swift
+[132/343] Compiling Down CodeBlockOptions.swift
+[133/343] Compiling Down ListItemOptions.swift
+[134/343] Compiling Down QuoteStripeOptions.swift
+[135/351] Compiling Down Link.swift
+[136/351] Compiling Down List.swift
+[137/351] Compiling Down Node.swift
+[138/351] Compiling Down Paragraph.swift
+[139/351] Compiling Down SoftBreak.swift
+[140/351] Compiling Down Strong.swift
+[141/351] Compiling Down Document.swift
+[142/351] Compiling Down Emphasis.swift
+[143/351] Compiling Down LineBreak.swift
+[150/351] Emitting module Down
+[151/351] Compiling Down BaseNode.swift
+[152/351] Compiling Down BlockQuote.swift
+[153/351] Compiling Down ChildSequence.swift
+[154/351] Compiling Down Code.swift
+[155/351] Compiling Down CodeBlock.swift
+[156/351] Compiling Down CustomBlock.swift
+[157/351] Compiling Down CustomInline.swift
+[158/351] Compiling Down ThematicBreakOptions.swift
+[159/351] Compiling Down DownStyler.swift
+[160/351] Compiling Down DownStylerConfiguration.swift
+[161/351] Compiling Down Styler.swift
+[162/351] Compiling Down DownDebugTextView.swift
+[163/351] Compiling Down DownTextView.swift
+[164/351] Compiling Down AttributedStringVisitor.swift
+[165/351] Compiling Down DebugVisitor.swift
+[166/351] Compiling Down DownView.swift
+[167/351] Compiling Down resource_bundle_accessor.swift
+[168/351] Compiling SwiftDraw LayerTree.Builder.Path.Arc.swift
+[169/351] Compiling SwiftDraw LayerTree.Builder.Path.swift
+[170/351] Compiling SwiftDraw LayerTree.Builder.Shape.swift
+[171/351] Compiling SwiftDraw LayerTree.Builder.Text.swift
+[172/351] Compiling SwiftDraw LayerTree.Builder.swift
+[173/351] Compiling SwiftDraw LayerTree.Color.swift
+[174/351] Compiling Down Heading.swift
+[175/351] Compiling Down HtmlBlock.swift
+[176/351] Compiling Down HtmlInline.swift
+[177/351] Compiling Down Image.swift
+[178/351] Compiling Down Item.swift
+[179/351] Compiling Down Text.swift
+[180/351] Compiling Down ThematicBreak.swift
+[181/351] Compiling Down ColorCollection.swift
+[182/351] Compiling Down FontCollection.swift
+[183/351] Compiling Down ParagraphStyleCollection.swift
+[184/351] Compiling Down BlockBackgroundColorAttribute.swift
+[185/351] Compiling Down QuoteStripeAttribute.swift
+[186/351] Compiling Down ThematicBreakAttribute.swift
+[187/351] Compiling Down CGPoint+Translate.swift
+[188/351] Compiling Down CGRect+Helpers.swift
+[189/351] Compiling Down NSAttributedString+Helpers.swift
+[190/351] Compiling Down ListItemPrefixGenerator.swift
+[191/351] Compiling Down Visitor.swift
+[192/351] Compiling Down Down.swift
+[193/351] Compiling Down DownErrors.swift
+[194/351] Compiling Down DownOptions.swift
+[195/351] Compiling Down NSAttributedString+HTML.swift
+[196/351] Compiling Dip TypeForwarding.swift
+[197/351] Compiling Dip RuntimeArguments.swift
+[198/351] Compiling Dip Resolve.swift
+[199/351] Compiling Dip Register.swift
+[200/351] Compiling Dip DipError.swift
+[207/351] Emitting module Dip
+[208/351] Compiling Dip StoryboardInstantiatable.swift
+[247/352] Compiling Down DownLaTeXRenderable.swift
+[248/352] Compiling Down DownRenderable.swift
+[249/352] Compiling Down DownXMLRenderable.swift
+[250/352] Compiling Down BundleHelper.swift
+[259/352] Emitting module SwiftDraw
+[260/352] Compiling SwiftDraw URL+Data.swift
+[261/352] Compiling SwiftDraw URL+Fragment.swift
+[262/352] Compiling SwiftDraw PairedSequence.swift
+[263/352] Compiling SwiftDraw TextOutputStream+StandardError.swift
+[264/352] Compiling SwiftDraw XML.Element.swift
+[265/352] Compiling SwiftDraw XML.Formatter.SVG.swift
+[266/352] Compiling SwiftDraw XML.Formatter.swift
+[267/352] Compiling SwiftDraw XML.SAXParser.swift
+[276/352] Compiling Dip Utils.swift
+[277/418] Compiling Common ReaderModeFontSize.swift
+[278/418] Compiling Common ReaderModeFontType.swift
+[279/418] Compiling Common ReaderModeState.swift
+[280/418] Compiling Common ReaderModeStyle.swift
+[281/418] Compiling Common ReaderModeTheme.swift
+[283/418] Compiling Common LightTheme.swift
+[284/418] Compiling Common PrivateModeTheme.swift
+[285/418] Compiling Common ThemeableView+Debug.swift
+[286/418] Compiling Common ThemeableView.swift
+[287/418] Compiling Common AppInfo.swift
+[288/418] Compiling Common Bytes.swift
+[289/424] Emitting module Kingfisher
+[290/424] Compiling Common Logger.swift
+[291/424] Compiling Common AppContainer.swift
+[292/424] Compiling Common ServiceProvider.swift
+[293/424] Compiling Common ColorExtension.swift
+[294/424] Compiling Common DataExtension.swift
+[295/424] Compiling Common DictionaryExtension.swift
+[296/424] Compiling Common HexExtension.swift
+[297/424] Compiling Common SwiftUITheme.swift
+[298/424] Compiling Common Theme.swift
+[299/424] Compiling Common ThemeApplicable.swift
+[300/424] Compiling Common ThemeColourPalette.swift
+[301/424] Compiling Common ThemeManager.swift
+[302/424] Compiling Common ThemeType.swift
+[303/424] Compiling Common Themeable.swift
+[304/424] Compiling Common StringExtension.swift
+[305/424] Compiling Common UIColorExtensions.swift
+[306/424] Compiling Common DarkTheme.swift
+[307/424] Compiling Common DefaultThemeManager.swift
+[308/424] Compiling Common FxColors.swift
+[309/424] Compiling Common FxShadow.swift
+[310/424] Compiling Common Gradient.swift
+[311/424] Compiling Common DeviceInfo.swift
+[312/424] Compiling Common DispatchGroupInterface.swift
+[313/424] Compiling Common DispatchQueueHelper.swift
+[314/424] Compiling Common FileManagerProtocol.swift
+[315/424] Compiling Common ReusableCell.swift
+[317/424] Compiling Common Accessibility.swift
+[318/424] Compiling Common AppBuildChannel.swift
+[319/424] Compiling Common AppConstants.swift
+[320/424] Compiling Common BrowserKitInformation.swift
+[321/424] Compiling Common EffectiveTLDNames.swift
+[322/424] Compiling Common LaunchArguments.swift
+[323/424] Compiling Common NotificationConstants.swift
+[324/424] Compiling Kingfisher Runtime.swift
+[325/424] Compiling Kingfisher SizeExtensions.swift
+[326/424] Compiling Kingfisher String+SHA256.swift
+[327/424] Compiling Kingfisher AnimatedImageView.swift
+[328/424] Compiling Kingfisher Indicator.swift
+[329/424] Compiling Kingfisher resource_bundle_accessor.swift
+[330/424] Compiling Common DispatchQueueInterface.swift
+[331/424] Compiling Common DispatchSourceInterface.swift
+[332/424] Compiling Common DynamicFont.swift
+[333/424] Compiling Common DynamicFontHelper.swift
+[334/424] Compiling Common FXFontStyles.swift
+[335/424] Compiling Common MenuHelper.swift
+[336/424] Compiling Common MenuHelperLoginInterface.swift
+[337/424] Compiling Common LoggerCategory.swift
+[338/424] Compiling Common LoggerFileManager.swift
+[339/424] Compiling Common LoggerLevel.swift
+[340/424] Compiling Common SentryWrapper.swift
+[341/424] Compiling Common SwiftyBeaverWrapper.swift
+[342/424] Compiling Common Application.swift
+[343/424] Compiling Common DeviceTypeProvider.swift
+[344/424] Compiling Common StandardImageIdentifiers.swift
+[345/424] Compiling Common UIStackViewExtension.swift
+[346/424] Compiling Common UIViewExtension.swift
+[347/424] Compiling Common URLExtension.swift
+[348/424] Compiling Common VerticalAlignmentExtension.swift
+[349/424] Compiling Common CrashManager.swift
+[350/424] Compiling Common DefaultLogger.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[372/431] Compiling ContentBlockingGeneratorTests MockData.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[380/431] Compiling ContentBlockingGeneratorTests ContentBlockerParserTests.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[395/431] Emitting module ContentBlockingGeneratorTests
+[396/431] Compiling ContentBlockingGeneratorTests ContentBlockerGeneratorTests.swift
+[397/431] Emitting module ActionExtensionKitTests
+[398/431] Compiling ActionExtensionKitTests FirefoxURLBuilderTests.swift
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[399/431] Emitting module Common
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[407/431] Compiling Common MenuHelperURLBarInterface.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[408/431] Compiling Common MenuHelperWebViewInterface.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[409/431] Compiling Common Notifiable.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[410/431] Compiling Common NotificationProtocol.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[411/431] Compiling Common TextStyling.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[412/431] Compiling Common UserDefaultsInterface.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+[413/431] Compiling Common WindowUUID+Extensions.swift
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+/Users/inakivillar/Desktop/test1/firefox/firefox-ios/BrowserKit/Sources/Common/Accessibility.swift:5:8: error: no such module 'UIKit'
+ 3 | // file, You can obtain one at http://mozilla.org/MPL/2.0/
+ 4 | 
+ 5 | import UIKit
+   |        `- error: no such module 'UIKit'
+ 6 | 
+ 7 | @MainActor
+error: fatalError

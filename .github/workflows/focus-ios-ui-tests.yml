@@ -101,6 +101,20 @@ jobs:
                 cat github.md >> $GITHUB_STEP_SUMMARY
                 python ../test-fixtures/ci/convert_junit_to_markdown.py ${{ matrix.xcodebuild_test_plan == 'SmokeTest' && '--smoke' || '' }} --slack --${{ env.browser }} ./build/reports/junit.xml ./slack.json
               working-directory:  ${{ env.browser }}
+            - name: Setup Java for Develocity
+              uses: actions/setup-java@v4
+              with:
+                distribution: temurin
+                java-version: 17
+            - name: Publish Build Scan to Develocity
+              id: develocity
+              run: |
+                mkdir -p test-reports
+                cp ${{ env.browser }}/build/reports/junit.xml test-reports/junit-${{ matrix.xcodebuild_test_plan }}.xml 2>/dev/null || true
+                ./gradlew import --no-configuration-cache
+              env:
+                DEVELOCITY_ACCESS_KEY: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
+              continue-on-error: true
             - name: Upload log file
               id: upload-log
               uses: actions/upload-artifact@v4.3.3

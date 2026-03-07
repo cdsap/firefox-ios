@@ -168,6 +168,20 @@ jobs:
           python ../test-fixtures/ci/convert_junit_to_markdown.py --smoke --slack --${{ env.browser }} ./combined.xml ./slack.json
           mv ./combined.xml "junit-smoketests-${{ matrix.ios_simulator }}-`date +"%Y-%m-%d"`.xml"
         working-directory:  ${{ env.browser }}
+      - name: Setup Java for Develocity
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Publish Build Scan to Develocity
+        id: develocity
+        run: |
+          mkdir -p test-reports
+          cp ${{ env.browser }}/junit-smoketests-*.xml test-reports/ 2>/dev/null || cp ${{ env.browser }}/junit-smoketest*.xml test-reports/ 2>/dev/null || true
+          ./gradlew import --no-configuration-cache
+        env:
+          DEVELOCITY_ACCESS_KEY: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
+        continue-on-error: true
       - name: Upload junit files
         id: upload-junit
         uses: actions/upload-artifact@v4.3.3
@@ -252,6 +266,20 @@ jobs:
             python ../test-fixtures/ci/convert_junit_to_markdown.py --slack --${{ env.browser }} ./build/reports/junit.xml ./slack.json
             mv ./build/reports/junit.xml "junit-fullfunctional-${{ matrix.ios_simulator }}-`date +"%Y-%m-%d"`.xml"
           working-directory:  ${{ env.browser }}
+        - name: Setup Java for Develocity
+          uses: actions/setup-java@v4
+          with:
+            distribution: temurin
+            java-version: 17
+        - name: Publish Build Scan to Develocity
+          id: develocity
+          run: |
+            mkdir -p test-reports
+            cp ${{ env.browser }}/junit-fullfunctional-*.xml test-reports/ 2>/dev/null || cp ${{ env.browser }}/build/reports/junit.xml test-reports/junit-fullfunctional.xml 2>/dev/null || true
+            ./gradlew import --no-configuration-cache
+          env:
+            DEVELOCITY_ACCESS_KEY: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
+          continue-on-error: true
         - name: Upload junit files
           id: upload-junit
           uses: actions/upload-artifact@v4.3.3

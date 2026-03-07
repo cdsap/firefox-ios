@@ -141,6 +141,20 @@ jobs:
           python ../test-fixtures/ci/convert_junit_to_markdown.py --slack --${{ env.browser }} ./junit-fullfunctionaltests.xml ./slack-fullfunctionaltests.json
           mv ./junit-fullfunctionaltests.xml "junit-focus-ios-fullfunctionaltests-${{ matrix.ios_simulator }}-${{ matrix.ios_version }}-`date +"%Y-%m-%d"`.xml"
         working-directory:  ${{ env.browser }}
+      - name: Setup Java for Develocity
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Publish Build Scan to Develocity
+        id: develocity
+        run: |
+          mkdir -p test-reports
+          cp ${{ env.browser }}/junit-focus-ios-*.xml test-reports/ 2>/dev/null || true
+          ./gradlew import --no-configuration-cache
+        env:
+          DEVELOCITY_ACCESS_KEY: ${{ secrets.DEVELOCITY_ACCESS_KEY }}
+        continue-on-error: true
       - name: Upload junit files
         id: upload-junit
         uses: actions/upload-artifact@v4.3.3
