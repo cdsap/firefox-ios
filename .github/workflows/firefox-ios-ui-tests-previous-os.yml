@@ -176,7 +176,6 @@ jobs:
           jrm combined.xml junit-*.xml
           python ../test-fixtures/ci/convert_junit_to_markdown.py --smoke --github --${{ env.browser }} ./combined.xml ./github.md
           cat github.md >> $GITHUB_STEP_SUMMARY
-          python ../test-fixtures/ci/convert_junit_to_markdown.py --smoke --slack --${{ env.browser }} ./combined.xml ./slack.json
           mv ./combined.xml "junit-smoketests-${{ matrix.ios_simulator }}-${{ matrix.ios_version }}-`date +"%Y-%m-%d"`.xml"
         working-directory:  ${{ env.browser }}
       - name: Setup Java for Develocity
@@ -277,7 +276,6 @@ jobs:
           run: |
             python ../test-fixtures/ci/convert_junit_to_markdown.py --github --${{ env.browser }} ./build/reports/junit.xml ./github.md
             cat github.md >> $GITHUB_STEP_SUMMARY
-            python ../test-fixtures/ci/convert_junit_to_markdown.py --slack --${{ env.browser }} ./build/reports/junit.xml ./slack.json
             mv ./build/reports/junit.xml "junit-fullfunctional-${{ matrix.ios_simulator }}-${{ matrix.ios_version }}-`date +"%Y-%m-%d"`.xml"
           working-directory:  ${{ env.browser }}
         - name: Setup Java for Develocity
