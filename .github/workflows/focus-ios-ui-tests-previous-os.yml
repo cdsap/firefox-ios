@@ -6,9 +6,9 @@ on:
 
 env:
     browser: focus-ios
-    xcode_version: 16.3
-    ios_version_compile: 18.4
-    ios_simulator_default: iPhone 16
+    xcode_version: 26.3
+    ios_version_compile: 26.2
+    ios_simulator_default: iPhone 17
     xcodebuild_scheme: Focus
     xcodebuild_target: XCUITest
     test_results_directory: /Users/runner/tmp
@@ -16,7 +16,7 @@ env:
 jobs:
   compile:
     name: Compile
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - name: Check out source code
         uses: actions/checkout@v4.1.7
@@ -30,9 +30,6 @@ jobs:
           xcodebuild -version
           ./bootstrap.sh focus
           ./bootstrap.sh firefox --force
-      - name: Install iOS ${{ env.ios_version_compile }} simulator runtime
-        run: |
-          sudo xcodes runtimes install "iOS ${{ env.ios_version_compile }}"
       - name: Build Focus
         id: compile
         run: |
@@ -53,7 +50,7 @@ jobs:
 
   run-tests:
     name: Run tests
-    runs-on: macos-15
+    runs-on: macos-26
     needs: compile
     strategy:
       fail-fast: false
