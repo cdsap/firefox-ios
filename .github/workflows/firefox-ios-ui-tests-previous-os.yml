@@ -187,6 +187,7 @@ jobs:
         id: develocity
         run: |
           mkdir -p test-reports
+          python test-fixtures/ci/fix_junit_timestamp.py ${{ env.browser }}/junit-smoketests-*.xml ${{ env.browser }}/junit-smoketest*.xml
           cp ${{ env.browser }}/junit-smoketests-*.xml test-reports/ 2>/dev/null || cp ${{ env.browser }}/junit-smoketest*.xml test-reports/ 2>/dev/null || true
           ./gradlew import --no-configuration-cache
         env:
@@ -287,6 +288,7 @@ jobs:
           id: develocity
           run: |
             mkdir -p test-reports
+            python test-fixtures/ci/fix_junit_timestamp.py ${{ env.browser }}/junit-fullfunctional-*.xml ${{ env.browser }}/build/reports/junit.xml
             cp ${{ env.browser }}/junit-fullfunctional-*.xml test-reports/ 2>/dev/null || cp ${{ env.browser }}/build/reports/junit.xml test-reports/junit-fullfunctional.xml 2>/dev/null || true
             ./gradlew import --no-configuration-cache
           env:

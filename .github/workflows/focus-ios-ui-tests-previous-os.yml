@@ -172,6 +172,7 @@ jobs:
         id: develocity
         run: |
           mkdir -p test-reports
+          python test-fixtures/ci/fix_junit_timestamp.py ${{ env.browser }}/junit-focus-ios-*.xml
           cp ${{ env.browser }}/junit-focus-ios-*.xml test-reports/ 2>/dev/null || true
           ./gradlew import --no-configuration-cache
         env:
