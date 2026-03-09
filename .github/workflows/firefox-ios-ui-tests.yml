@@ -4,63 +4,68 @@ on:
     workflow_dispatch: {}
 env:
     browser: firefox-ios
-    xcode_version: 16.2
-    ios_version: 18.2
-    ios_simulator_default: iPhone 16
+    xcode_version: 26.3
+    ios_version: 26.2
+    ios_simulator_default: iPhone 17
     xcodebuild_scheme: Fennec
     xcodebuild_target: Client
     test_results_directory: /Users/runner/tmp
     
 jobs:
-    compile:
-        name: Compile
-        runs-on: macos-15
-        steps:
-            - name: Check out source code
-              uses: actions/checkout@v4.1.7
-            - name: Setup Xcode
-              id: xcode
-              run: |
-                sudo rm -rf /Applications/Xcode.app
-                sudo xcode-select -s /Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer
-                xcodebuild -version
-                ./bootstrap.sh focus
-                ./bootstrap.sh firefox --force
-            - name: Compile source code
-              id: compile
-              run: |
-                xcodebuild \
-                  -resolvePackageDependencies \
-                  -onlyUsePackageVersionsFromResolvedFile
-                xcodebuild \
-                  build-for-testing \
-                  -scheme ${{ env.xcodebuild_scheme }} \
-                  -target ${{ env.xcodebuild_target }} \
-                  -derivedDataPath ~/DerivedData \
-                  -destination 'platform=iOS Simulator,name=${{ env.ios_simulator_default }},OS=${{ env.ios_version }}' \
-                  COMPILER_INDEX_STORE_ENABLE=NO CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ARCHS="arm64"
-              working-directory: ${{ env.browser }}
-            - name: Compress Derived Data
-              id: compress-dd
-              run: |
-                tar czf derived-data.tar.gz ~/DerivedData/Build/Products
-            - name: Save Derived Data
-              id: upload-derived-data
-              uses: actions/upload-artifact@v4.3.4
-              with:
-                name: xcode-cache-deriveddata-${{ github.workflow }}-${{ github.sha }}
-                path: ./derived-data.tar.gz
-                retention-days: 2
+  compile:
+    name: Compile
+    runs-on: macos-26
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v4.1.7
+      - name: Setup Xcode
+        id: xcode
+        run: |
+          sudo rm -rf /Applications/Xcode.app
+          sudo rm -fr /Applications/Xcode_15*
+          sudo rm -fr /Applications/Xcode_14*
+          sudo xcode-select -s /Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer
+          xcodebuild -version
+          ./bootstrap.sh focus
+          ./bootstrap.sh firefox --force
+      - name: Install iOS ${{ env.ios_version }} simulator runtime
+        run: |
+          sudo xcodes runtimes install "iOS ${{ env.ios_version }}"
+      - name: Compile source code
+        id: compile
+        run: |
+          xcodebuild \
+            -resolvePackageDependencies \
+            -onlyUsePackageVersionsFromResolvedFile
+          xcodebuild \
+            build-for-testing \
+            -scheme ${{ env.xcodebuild_scheme }} \
+            -target ${{ env.xcodebuild_target }} \
+            -derivedDataPath ~/DerivedData \
+            -destination 'platform=iOS Simulator,arch=arm64,name=${{ env.ios_simulator_default }},OS=${{ env.ios_version }}' \
+            COMPILER_INDEX_STORE_ENABLE=NO CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ARCHS="arm64"
+        working-directory: ${{ env.browser }}
+      - name: Compress Derived Data
+        id: compress-dd
+        run: |
+          tar czf derived-data.tar.gz ~/DerivedData/Build/Products
+      - name: Save Derived Data
+        id: upload-derived-data
+        uses: actions/upload-artifact@v4.3.4
+        with:
+          name: xcode-cache-deriveddata-${{ github.workflow }}-${{ github.sha }}
+          path: ./derived-data.tar.gz
+          retention-days: 2
 
     run-smoketests:
       name: Run smoke tests
-      runs-on: macos-14
+      runs-on: macos-26
       needs: compile
       strategy:
         fail-fast: false
         max-parallel: 1
         matrix:
-          ios_simulator: ['iPhone 16', 'iPad mini (A17 Pro)']
+          ios_simulator: ['iPhone 17', 'iPad mini (A17 Pro)']
       steps:
       - name: Check out source code
         uses: actions/checkout@v4.1.7
@@ -74,10 +79,16 @@ jobs:
         id: xcode
         run: |
           sudo rm -rf /Applications/Xcode.app
+          sudo rm -fr /Applications/Xcode_15*
+          sudo rm -fr /Applications/Xcode_14*
           sudo xcode-select -s /Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer
           xcodebuild -version
           ./bootstrap.sh focus
           ./bootstrap.sh firefox --force
+      - name: Install iOS ${{ env.ios_version }} simulator runtime
+        run: |
+          sudo xcodes runtimes install "iOS ${{ env.ios_version }}"
+          xcrun simctl list devices iphone
       - name: Get derived data
         id: download-derived-data
         uses: actions/download-artifact@v4
@@ -95,7 +106,7 @@ jobs:
             -scheme ${{ env.xcodebuild_scheme }} \
             -target ${{ env.xcodebuild_target }} \
             -derivedDataPath ~/DerivedData \
-            -destination 'platform=iOS Simulator,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
+            -destination 'platform=iOS Simulator,arch=arm64,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
             -testPlan Smoketest1 \
             -resultBundlePath ${{ env.test_results_directory }}/results-smoketest1 \
             | tee xcodebuild-smoketest1.log | xcpretty -r junit --output ./junit-smoketest1.xml && exit ${PIPESTATUS[0]}
@@ -109,7 +120,7 @@ jobs:
             -scheme ${{ env.xcodebuild_scheme }} \
             -target ${{ env.xcodebuild_target }} \
             -derivedDataPath ~/DerivedData \
-            -destination 'platform=iOS Simulator,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
+            -destination 'platform=iOS Simulator,arch=arm64,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
             -testPlan Smoketest2 \
             -resultBundlePath ${{ env.test_results_directory }}/results-smoketest2 \
             | tee xcodebuild-smoketest2.log | xcpretty -r junit --output ./junit-smoketest2.xml && exit ${PIPESTATUS[0]}
@@ -123,7 +134,7 @@ jobs:
             -scheme ${{ env.xcodebuild_scheme }} \
             -target ${{ env.xcodebuild_target }} \
             -derivedDataPath ~/DerivedData \
-            -destination 'platform=iOS Simulator,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
+            -destination 'platform=iOS Simulator,arch=arm64,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
             -testPlan Smoketest3 \
             -resultBundlePath ${{ env.test_results_directory }}/results-smoketest3 \
             | tee xcodebuild-smoketest3.log | xcpretty -r junit --output ./junit-smoketest3.xml && exit ${PIPESTATUS[0]}
@@ -137,7 +148,7 @@ jobs:
             -scheme ${{ env.xcodebuild_scheme }} \
             -target ${{ env.xcodebuild_target }} \
             -derivedDataPath ~/DerivedData \
-            -destination 'platform=iOS Simulator,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
+            -destination 'platform=iOS Simulator,arch=arm64,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
             -testPlan Smoketest4 \
             -resultBundlePath ${{ env.test_results_directory }}/results-smoketest4 \
             | tee xcodebuild-smoketest4.log | xcpretty -r junit --output ./junit-smoketest4.xml && exit ${PIPESTATUS[0]}
@@ -202,13 +213,13 @@ jobs:
 
     run-fullfunctionaltests:
       name: Run full functional tests
-      runs-on: macos-14
+      runs-on: macos-26
       needs: run-smoketests
       if: false
       strategy:
         fail-fast: false
         matrix:
-          ios_simulator: ['iPhone 15 Pro Max', 'iPad Pro (12.9 inch) (6th generation)']
+          ios_simulator: ['iPhone 17', 'iPad Pro (12.9 inch) (6th generation)']
       steps:
         - name: Check out source code
           uses: actions/checkout@v4.1.7
@@ -217,6 +228,20 @@ jobs:
           run: |
             gem install xcpretty -v 0.3.0
             pip install blockkit==1.9.1
+        - name: Setup Xcode
+          id: xcode
+          run: |
+            sudo rm -rf /Applications/Xcode.app
+            sudo rm -fr /Applications/Xcode_15*
+            sudo rm -fr /Applications/Xcode_14*
+            sudo xcode-select -s /Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer
+            xcodebuild -version
+            ./bootstrap.sh focus
+            ./bootstrap.sh firefox --force
+        - name: Install iOS ${{ env.ios_version }} simulator runtime
+          run: |
+            sudo xcodes runtimes install "iOS ${{ env.ios_version }}"
+            xcrun simctl list devices iphone
         - name: Get derived data
           id: download-derived-data
           uses: actions/download-artifact@v4
@@ -235,7 +260,7 @@ jobs:
               -scheme ${{ env.xcodebuild_scheme }} \
               -target ${{ env.xcodebuild_target }} \
               -derivedDataPath ~/DerivedData \
-              -destination 'platform=iOS Simulator,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
+              -destination 'platform=iOS Simulator,arch=arm64,name=${{ matrix.ios_simulator }},OS=${{ env.ios_version }}' \
               -testPlan FullFunctionalTestPlan \
               -resultBundlePath ${{ env.test_results_directory }}/results \
               | tee xcodebuild.log | xcpretty -r junit && exit ${PIPESTATUS[0]}
