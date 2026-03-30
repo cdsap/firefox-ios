@@ -1,8 +1,5 @@
 name: Bitrise Xcode Check and Update
 
-on:
-  schedule:
-    - cron: '0 */6 * * *'
 
 jobs:
   build:
