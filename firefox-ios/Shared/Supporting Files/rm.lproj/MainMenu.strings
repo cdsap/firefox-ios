@@ -289,12 +289,6 @@
 /* On the main menu, the title for the action that will take the user to the Share module in the application. */
 "MainMenu.Submenus.Tools.Share.Title.v144" = "Parter";
 
-/* On the main menu, the title for the action that will turn Website's Dark Mode off in the application. */
-"MainMenu.Submenus.Tools.WebsiteDarkMode.Off.Title.v137" = "Deactivar il modus stgir per websites";
-
-/* On the main menu, the title for the action that will turn Website's Dark Mode on in the application. */
-"MainMenu.Submenus.Tools.WebsiteDarkMode.On.Title.v137" = "Activar il modus stgir per websites";
-
 /* On the main menu, the title for the action that indicate, website dark mode can be turned on or off. */
 "MainMenu.Submenus.Tools.WebsiteDarkMode.Title.v141" = "Modus stgir da la website";
 
@@ -387,6 +381,9 @@
 
 /* On the main menu, the title for the action that will show more menu options in the current section of the menu. */
 "MainMenu.ToolsSection.MoreOptions.Title.v141" = "Dapli";
+
+/* On the main menu, the title for the action that will show the reader view for the webpage. */
+"MainMenu.ToolsSection.ReaderView.Title.v149" = "Vista da lectura";
 
 /* On the main menu, the title for the action that will take the user to the Save submenu in the menu. */
 "MainMenu.ToolsSection.SaveSubmenu.Title.v131" = "Memorisar";
