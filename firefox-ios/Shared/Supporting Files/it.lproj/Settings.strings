@@ -254,7 +254,7 @@
 "Settings.Studies.Message.v148" = "%@ seleziona utenti in modo casuale per provare nuove funzionalità, contribuendo così a migliorare la qualità del browser per tutti.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
-"Settings.Studies.Title.v136" = "Installa e conduci studi";
+"Settings.Studies.Title.v136" = "Installa ed esegui studi";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Title.v148" = "Consenti studi sulle funzionalità";
@@ -270,12 +270,6 @@
 
 /* This is the section title for the gestures features under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.Title.v142" = "Gesti";
-
-/* The accessibility label for the language picker button in the Summarize settings. */
-"Settings.Summarize.LanguageSection.PickerButtonAccessibilityLabel.v149" = "Scegli una lingua";
-
-/* The label for the picker option to select the preferred app language for the summarizer inside the Summarize settings. The preferred app language refers to the language that the user has selected to use for the app in the app settings. */
-"Settings.Summarize.LanguageSection.PreferredAppLanguageLabel.v149" = "Lingua preferita per le app";
 
 /* The title for the language choose section for the summarizer inside the Summarize settings. */
 "Settings.Summarize.LanguageSection.Title.v149" = "Lingua";

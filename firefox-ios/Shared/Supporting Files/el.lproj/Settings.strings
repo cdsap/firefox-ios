@@ -170,7 +170,7 @@
 "Settings.Notifications.TurnOnNotificationsTitle.v112" = "Ενεργοποίηση ειδοποιήσεων";
 
 /* Show Firefox Browser Privacy Notice page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
-"Settings.PrivacyNotice.Title.v137" = "Σημείωση απορρήτου";
+"Settings.PrivacyNotice.Title.v137" = "Δήλωση απορρήτου";
 
 /* Title for a link that explains what Mozilla means by Rollouts */
 "Settings.Rollouts.Link.v148" = "Μάθετε περισσότερα";
@@ -270,12 +270,6 @@
 
 /* This is the section title for the gestures features under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.Title.v142" = "Χειρονομίες";
-
-/* The accessibility label for the language picker button in the Summarize settings. */
-"Settings.Summarize.LanguageSection.PickerButtonAccessibilityLabel.v149" = "Επιλέξτε μια γλώσσα";
-
-/* The label for the picker option to select the preferred app language for the summarizer inside the Summarize settings. The preferred app language refers to the language that the user has selected to use for the app in the app settings. */
-"Settings.Summarize.LanguageSection.PreferredAppLanguageLabel.v149" = "Προτιμώμενη γλώσσα εφαρμογής";
 
 /* The title for the language choose section for the summarizer inside the Summarize settings. */
 "Settings.Summarize.LanguageSection.Title.v149" = "Γλώσσα";
